@@ -1,0 +1,26 @@
+.anh{
+  background-color:#FFFFFF;
+  padding: 10px;
+  box-shadow: inset 0px 0px 5px 0px rgba(156, 154, 154, 0.75);
+  border-radius: 10px
+}
+
+.namSinh>p{
+  padding: 0px 200px;
+}
+.nhomMau>p{
+  padding: 0px 270px;
+}
+.capBacHoc>p{
+  padding: 0px 250px;
+}
+.diaChi>p{
+  padding-left:  220px;
+}
+.anh>img{
+  border-radius: 10px;}
+  body{
+    margin: 0px auto;
+    max-width: 100%;
+    padding: 0px;
+  }

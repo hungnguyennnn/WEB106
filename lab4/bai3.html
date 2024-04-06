@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        grid-area: header;
+      }
+      nav {
+        grid-area: nav;
+      }
+      article {
+        grid-area: article;
+      }
+      aside {
+        grid-area: aside;
+      }
+      footer {
+        grid-area: footer;
+      }
+      .tong {
+        display: grid;
+        grid-template-areas:
+          "header header header header header header"
+          "nav nav nav nav nav nav "
+          "aside article article article article article"
+          "footer footer footer footer footer footer";
+      }
+      body {
+        border: 10px solid #bce2c9;
+        max-width: 100%;
+        margin: 0px auto;
+      }
+      header {
+        text-align: center;
+        color: #36b87d;
+        padding-bottom: 15px;
+      }
+      nav {
+        background-color: #36b87d;
+        padding: 15px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 30px;
+      }
+      nav a:hover {
+        background-color: #4c8a6e;
+        padding: 15px 30px;
+      }
+      article {
+        margin-left: 30px;
+      }
+      .anhAoTo {
+        background-color: #bce2c9;
+        height: 150px;
+        margin-right: 100px;
+        padding: 10px;
+      }
+      aside {
+        background-color: rgb(249, 244, 244);
+        padding-left: 10px;
+      }
+      .anhAoNho {
+        background-color: #bce2c9;
+        height: 150px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        padding: 10px;
+      }
+      .anhAo {
+        background-color: #bce2c9;
+
+        margin-bottom: 10px;
+        margin-right: 20px;
+        padding: 15px;
+      }
+      footer {
+        clear: both;
+        padding: 20px;
+        text-align: center;
+        border-top: 10px solid #bce2c9;
+      }
+      @media screen and (max-width: 600px) {
+        .tong {
+          display: block;
+        }
+        header {
+          text-align: center;
+        }
+        nav {
+          text-align: center;
+        }
+        nav a {
+          display: block;
+          padding: 10px;
+        }
+        article {
+          margin: 0;
+        }
+
+        aside {
+          padding: 10px;
+          width: 95%;
+        }
+        .anhAoTo,
+        .anhAoNho,
+        .anhAo {
+          margin: 10px;
+        }
+        footer {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tong">
+      <header>
+        <h1>THIS ID MY FIRST WEBPAGE</h1>
+        <p>Knowledge - Experience - FAQ</p>
+        <p>Using <b>flexible</b> layout</p>
+      </header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Technology</a>
+        <a href="#">Science</a>
+        <a href="#">Life</a>
+      </nav>
+      <article>
+        <h2>Form CSS</h2>
+        <p>Lorem ipsum dolor sit amet</p>
+        <div><p class="anhAoTo">image</p></div>
+        <p>
+          My first visit to Nha Trang, the coastal city, was three years ago. It
+          was a pleasant and memorable trip. Nha Trang, the capital of Khanhs
+          Hoaf province, has one of the most popular municipal beaches in all of
+          Vietnam.
+        </p>
+        <h2>Attribute Selector in CSS</h2>
+        <p>Lorem ipsum dolor sit amet</p>
+        <p class="anhAoTo">image</p>
+        <p>
+          My first visit to Nha Trang, the coastal city, was three years ago. It
+          was a pleasant and memorable trip. Nha Trang, the capital of Khanhs
+          Hoaf province, has one of the most popular municipal beaches in all of
+          Vietnam.
+        </p>
+      </article>
+      <aside>
+        <div>
+          <h3>Introduce</h3>
+          <div><p class="anhAoNho">image</p></div>
+          <p>
+            My first visit to Nha Trang, the coastal city, was three years ago.
+          </p>
+          <h3>Techonology</h3>
+          <div>
+            <p class="anhAo">image</p>
+            <p class="anhAo">image</p>
+            <p class="anhAo">image</p>
+          </div>
+          <h3>Follow Me</h3>
+          <p>Facebook</p>
+          <p>YouTube</p>
+        </div>
+      </aside>
+      <footer>NguyenVanHungHeHe</footer>
+    </div>
+  </body>
+</html>
